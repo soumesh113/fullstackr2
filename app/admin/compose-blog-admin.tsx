@@ -14,7 +14,7 @@ type Props = {
 const Composeblogadmin = ({addblog}:Props)=>{
     const router = useRouter()
     const cols = 202
-    const rows = 13
+    const rows = 10
     function handle(formData:FormData){
         alert("Blog added")
         const wait = addblog(formData)
@@ -30,9 +30,8 @@ const Composeblogadmin = ({addblog}:Props)=>{
             <br /> <br /> 
             <textarea
               name = "blog"
-              cols = {cols}
               rows={rows}
-              className="mb-4 p-2 border border-gray-300 rounded"
+              className="w-full mb-4 p-2 border border-gray-300 rounded"
               placeholder="Enter blog content here"
               required/>
              <label htmlFor="file" className="block text-lg font-semibold mb-4">Upload an Image</label>

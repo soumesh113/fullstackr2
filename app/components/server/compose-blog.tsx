@@ -13,7 +13,7 @@ type Props = {
 const Composeblog = ({addblog}:Props)=>{
     const router = useRouter();
     const cols = 202
-    const rows = 11
+    const rows = 12
     async function handle(formData:FormData){
         alert("Blog added")
         const wait = await addblog(formData)
@@ -26,9 +26,8 @@ const Composeblog = ({addblog}:Props)=>{
             <br /> <br /> 
             <textarea
               name = "blog"
-              cols={cols}
               rows={rows}
-              className="mb-4 p-2 border border-gray-300 rounded"
+              className="w-full mb-4 p-2 border border-gray-300 rounded"
               placeholder="Enter blog content here"
               required
             />
@@ -42,7 +41,7 @@ const Composeblog = ({addblog}:Props)=>{
             <br />  <br />
             <div className="w-full justify-between items-center flex">
                 <div className="w-full max-w-[100px]">
-                    <button type="submit" className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                         Submit
                     </button>
                 </div>

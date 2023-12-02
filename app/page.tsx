@@ -15,6 +15,7 @@ export default function Home() {
             Register or Log in: 
         </h3>
       </div>
+      < br /> <br />
       <div className="col-6 auth-widget">
         <AuthForm />
       </div>
