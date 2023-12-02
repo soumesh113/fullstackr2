@@ -16,7 +16,7 @@ export default function AuthForm() {
           input: "mt-1 p-2 border rounded-md w-full focus:outline-none focus:border-blue-500",
           button: "mt-4 bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300",
           container: "max-w-md mx-auto bg-black p-6 rounded-md shadow-md",
-          message: "block mt-4 text-base font-medium text-gray-600"
+          message: "block mt-4 text-base font-medium text-gray-200"
         },}}
       theme="default"
       showLinks={false}
