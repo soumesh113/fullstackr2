@@ -2,9 +2,10 @@
 import { useCallback, useEffect, useState } from 'react'
 
 import { Session, createClientComponentClient } from '@supabase/auth-helpers-nextjs'
-
+import { useRouter } from 'next/navigation';
 export default function AccountForm({ session }: { session: Session | null }) {
   const supabase = createClientComponentClient()
+  const router = useRouter()
   const [loading, setLoading] = useState(true)
   const [fullname, setFullname] = useState<string | null>(null)
   const [username, setUsername] = useState<string | null>(null)
@@ -62,6 +63,7 @@ export default function AccountForm({ session }: { session: Session | null }) {
     } finally {
       setLoading(false)
     }
+    router.refresh()
   }
 
   return (
