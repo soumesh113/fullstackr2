@@ -1,4 +1,3 @@
-import { getSortedPostsData } from "@/lib/posts";
 import { createClient } from "@supabase/supabase-js";
 import { Database } from "@/types/supabase";
 import ListItem from "./ListItem";
