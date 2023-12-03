@@ -21,19 +21,26 @@ const Composeblogadmin = ({addblog}:Props)=>{
         router.refresh()
     }
     return (
+        <div className="max-w-md mx-auto p-6 rounded-md shadow-md">
         <form action = {handle} className="w-full h-full">
-            <input name = "title" type = "text" className="w-full h-full text-2xl placeholder:text-gray-600 bg-transparent border-b-[0.5px] border-gray-600 p-4 outline-none border-none"
+        <div className="mb-4">
+            <input name = "title" type = "text" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
             placeholder="Enter blog title here" required/>
-            <br /> <br /> 
-            <input name = "author" type = "text" className="w-full h-full text-2xl placeholder:text-gray-600 bg-transparent border-b-[0.5px] border-gray-600 p-4 outline-none border-none"
+            </div>
+            <br /> 
+            <div className="mb-4">
+            <input name = "author" type = "text" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
             placeholder="Enter author name here" required/>
-            <br /> <br /> 
+            </div>
+            <br /> 
+            <div className="mb-4">
             <textarea
               name = "blog"
               rows={rows}
-              className="w-full mb-4 p-2 border border-gray-300 rounded"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md resize-none focus:outline-none focus:border-blue-500"
               placeholder="Enter blog content here"
               required/>
+              </div>
              <label htmlFor="file" className="block text-lg font-semibold mb-4">Upload an Image</label>
               <input
       type="file"
@@ -50,6 +57,7 @@ const Composeblogadmin = ({addblog}:Props)=>{
                 </div>
             </div>
         </form>
+        </div>
     )
 }
 
