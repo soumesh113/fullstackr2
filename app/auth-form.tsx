@@ -21,8 +21,7 @@ export default function AuthForm() {
       theme="default"
       showLinks={false}
       providers={[]}
-      redirectTo="http://localhost:3000/auth/callback"
-      // "https://fullstackr-six.vercel.app/auth/callback"
+      redirectTo="https://fullstackr-six.vercel.app/auth/callback"
     />
   )
 }
