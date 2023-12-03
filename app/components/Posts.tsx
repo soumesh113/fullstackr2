@@ -10,15 +10,15 @@ export default async function Posts(){
     if(posts)
     {
     return (
-        <section className="mt-6 mx-auto max-w-full px-4">
-            <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">Blogs:</h1>
-            <br />
-            <ul className="w-full grid grid-cols-3 gap-4">
-                {posts.map(post=>(
-                    <ListItem key = {post.blog_id} post = {post} />
-                ))}
-            </ul>
-        </section>
+        <section className="mt-6 mx-auto max-w-full px-6">
+        <h1 className="text-5xl font-bold text-white grid place-content-center pb-8 md:mb-0">Blogs</h1>
+        {/* <br /> */}
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          {posts.map((post) => (
+            <ListItem key={post.blog_id} post={post} />
+          ))}
+        </ul>
+      </section>
     )
                 }
 }

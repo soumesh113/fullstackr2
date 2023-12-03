@@ -42,7 +42,7 @@ export default async function Account() {
         <Navbar session={session} />
         < br />  < br /> 
         <div id = "compose">
-        <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">Create your own Blog:</h1>
+        <h1 className="text-6xl font-bold text-white grid place-content-center mb-2 md:mb-0">Create your own Blog</h1>
    <Display />
    </div>
    <div>
@@ -51,7 +51,7 @@ export default async function Account() {
    </div>
    <br />
    <div id="acc">
-   <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">Account Information:</h1>
+   <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">Account Information</h1>
    <AccountForm session={session} />
    </div>
    </div>
@@ -66,7 +66,7 @@ export default async function Account() {
         <Navbaradmin session={session} />
  <br /><br />
  <div id = "compose">
- <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">Create your own Blog:</h1>
+ <h1 className="text-5xl font-bold text-white grid place-content-center mb-2 md:mb-0">Create your own Blog</h1>
    <Display />
    </div>
    <div>
@@ -75,7 +75,7 @@ export default async function Account() {
    </div>
    <br /><br />
    <div id="acc">
-   <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">Account Information:</h1>
+   <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">Account Information</h1>
    <AccountForm session={session} />
    </div>
    </div>
