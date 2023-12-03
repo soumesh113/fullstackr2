@@ -10,7 +10,7 @@ export default async function Posts(){
     if(posts)
     {
     return (
-        <section className="mt-6 mx-auto max-w-2xl">
+        <section className="mt-6 mx-auto max-w-full">
             <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">Blogs:</h1>
             <br />
             <ul className="w-full grid grid-cols-3 gap-4">
