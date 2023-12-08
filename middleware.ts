@@ -21,9 +21,20 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(new URL('/', req.url))
   }
 
+  const i = user?.id
+  const { data, status } = await supabase
+  .from('profiles')
+  .select(`admin`)
+  .eq('id', i)
+  .single()
+  const ad = data?.admin
+  if(ad==null && req.nextUrl.pathname === '/admin')
+  {
+    return NextResponse.redirect(new URL('/', req.url))
+  }
   return res
 }
 
 export const config = {
-  matcher: ['/', '/account'],
+  matcher: ['/', '/account', '/admin'],
 }
