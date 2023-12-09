@@ -23,9 +23,9 @@ export default async function Navbar({ session }: { session: Session | null })
            <div className="container mx-auto flex justify-between items-center">
                 <Link href="/" className="text-white text-2xl font-bold">Blogs Website</Link>
                 <div className="space-x-4">
-        <Link href="#compose" className="text-white text-sm md:text-base">Create Blog</Link>
-        <Link href="#posts" className="text-white text-sm md:text-base">View Blogs</Link>
-        <Link href="#acc" className="text-white text-sm md:text-base">{full_name}</Link>
+        <Link href="#compose" className="text-white text-xs md:text-base">Create Blog</Link>
+        <Link href="#posts" className="text-white text-xs md:text-base">View Blogs</Link>
+        <Link href="#acc" className="text-white text-xs md:text-base">{full_name}</Link>
       </div>
             </div>
         </nav>
