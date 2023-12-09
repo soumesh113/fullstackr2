@@ -20,12 +20,12 @@ export default async function Navbar({ session }: { session: Session | null })
     const full_name = data?.full_name
     return(
         <nav className="w-full bg-slate-600 p-4 sticky top-0 drop-shadow-xl z-10 mr-4">
-           <div className="container mx-auto flex md:justify-between md:items-center">
+           <div className="container mx-auto flex justify-between items-center">
                 <Link href="/" className="text-white text-2xl font-bold">Blogs Website</Link>
-                <div className="space-x-1 md:space-x-4">
-        <Link href="#compose" className="text-white float:right text-xs md:text-base">Create Blog</Link>
-        <Link href="#posts" className="text-white float:right text-xs md:text-base">View Blogs</Link>
-        <Link href="#acc" className="text-white float:right text-xs md:text-base">{full_name}</Link>
+                <div className="space-x-4">
+        <Link href="#compose" className="text-white">Create Blog</Link>
+        <Link href="#posts" className="text-white">View Blogs</Link>
+        <Link href="#acc" className="text-white">{full_name}</Link>
       </div>
             </div>
         </nav>
